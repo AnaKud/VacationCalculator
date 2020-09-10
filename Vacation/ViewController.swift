@@ -8,15 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
     
     @IBOutlet weak var middleGrossTextField: UITextField!
     @IBOutlet weak var nowSalary: UITextField!
-    @IBOutlet weak var vacationDaysLabel: UILabel!
-    @IBOutlet weak var workedDaysLabel: UILabel!
+    
     @IBOutlet weak var workCalendarDaysLabel: UILabel!
-    @IBOutlet weak var workDaysStepperOutlet: UIStepper!
-    @IBOutlet weak var vacationDaysStepper: UIStepper!
+    @IBOutlet weak var workedDaysLabel: UILabel!
+    @IBOutlet weak var vacationDaysLabel: UILabel!
+    
     @IBOutlet weak var vacationCostLabel: UILabel!
     @IBOutlet weak var workCostLabel: UILabel!
     @IBOutlet weak var totalCostLabel: UILabel!
@@ -33,9 +33,17 @@ class ViewController: UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
         
-        assignbackground()
+        tableView.backgroundView = UIImageView(image: UIImage(named: "backgroundImageVacationApp"))
+        
     }
-
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
     //MARK: - Actions
     
     // worked days stepper
@@ -127,19 +135,6 @@ class ViewController: UIViewController {
             workedWord = "отработано"
         }
         return workedWord
-    }
-    // background method
-    func assignbackground(){
-        let background = UIImage(named: "backgroundImageVacationApp")
-        
-        var imageView : UIImageView!
-        imageView = UIImageView(frame: view.bounds)
-        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.image = background
-        imageView.center = view.center
-        view.addSubview(imageView)
-        self.view.sendSubviewToBack(imageView)
     }
     
     @objc func dissmissKeyboard() {

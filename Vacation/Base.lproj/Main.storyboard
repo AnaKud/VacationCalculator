@@ -1,210 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nz5-6Q-qQh">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="WsU-iL-1zg">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vacation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="nz5-6Q-qQh" customClass="ViewController" customModule="Vacation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JUr-Xd-yRa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Средняя ЗП за год" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTO-FA-QPf">
-                                <rect key="frame" x="20" y="50" width="169" height="33"/>
-                                <color key="backgroundColor" white="1" alpha="0.60001070205479456" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="Wcq-G1-an4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 день отпуска" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-eC-IaI">
-                                <rect key="frame" x="197" y="284" width="162" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="0.60001070205479456" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 дней отработано" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5w-h4-6Oz">
-                                <rect key="frame" x="20" y="284" width="169" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="0.60001070205479456" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="oAU-5k-4Zo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итого вы получите:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYv-iA-4pZ">
-                                <rect key="frame" x="20" y="564" width="339" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="0.60001070205479456" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="G7j-1d-ZX3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваши отпускные:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ju-Sy-hqB">
-                                <rect key="frame" x="20" y="444" width="339" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="0.60001070205479456" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="QKp-AY-CCv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваша ЗП в период отпуска:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybA-u7-jUy">
-                                <rect key="frame" x="20" y="504" width="339" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="0.60001070205479456" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Yab-Ye-Nfz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkL-qF-1l5">
-                                <rect key="frame" x="197" y="50" width="162" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-1y-oB3">
-                                <rect key="frame" x="197" y="114" width="162" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minimumValue="1" maximumValue="28" translatesAutoresizingMaskIntoConstraints="NO" id="wEt-7n-BxP">
-                                <rect key="frame" x="231" y="328" width="94" height="32"/>
-                                <variation key="heightClass=regular-widthClass=compact" insetsLayoutMarginsFromSafeArea="NO"/>
-                                <connections>
-                                    <action selector="vacationDaysChangingStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="3oN-4r-yzJ"/>
-                                </connections>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="22 рабочих дня в период отпуска (по производственому календарю)" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZG0-yd-MBr">
-                                <rect key="frame" x="20" y="178" width="339" height="61"/>
-                                <color key="backgroundColor" white="1" alpha="0.60001070205479456" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L58-6Q-3Fb">
-                                <rect key="frame" x="0.0" y="390" width="375" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="vfq-48-wve"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="tintColor" red="0.06598754137" green="0.02973069456" blue="0.38354112689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Рассчитать"/>
-                                <connections>
-                                    <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0BF-Gz-AMj"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Текущая ЗП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSY-bI-pgv">
-                                <rect key="frame" x="20" y="114" width="169" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="0.60001070205479456" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minimumValue="15" maximumValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="xmR-F7-VqS">
-                                <rect key="frame" x="57" y="326" width="94" height="32"/>
-                                <connections>
-                                    <action selector="workedDaysChangingStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="cqB-9G-asO"/>
-                                </connections>
-                            </stepper>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="22" minValue="16" maxValue="46" translatesAutoresizingMaskIntoConstraints="NO" id="9pf-TH-C0e">
-                                <rect key="frame" x="18" y="247" width="343" height="30"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" selected="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="lKz-VC-gaH"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="sliderValueCHanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fa5-h6-pVL"/>
-                                </connections>
-                            </slider>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="wEt-7n-BxP" firstAttribute="leading" secondItem="xmR-F7-VqS" secondAttribute="trailing" constant="80" id="0YI-8w-Dd1"/>
-                            <constraint firstItem="kkL-qF-1l5" firstAttribute="trailing" secondItem="aPc-1y-oB3" secondAttribute="trailing" id="5hQ-ji-fyz"/>
-                            <constraint firstItem="GSY-bI-pgv" firstAttribute="leading" secondItem="ZG0-yd-MBr" secondAttribute="leading" id="6Rx-Xl-Jph"/>
-                            <constraint firstItem="ybA-u7-jUy" firstAttribute="leading" secondItem="QYv-iA-4pZ" secondAttribute="leading" id="6yG-N6-fek"/>
-                            <constraint firstItem="F5w-h4-6Oz" firstAttribute="centerX" secondItem="xmR-F7-VqS" secondAttribute="centerX" id="94E-KZ-Pln"/>
-                            <constraint firstItem="aPc-1y-oB3" firstAttribute="top" secondItem="kkL-qF-1l5" secondAttribute="bottom" constant="30" id="9ka-42-nkp"/>
-                            <constraint firstItem="F5w-h4-6Oz" firstAttribute="leading" secondItem="3ju-Sy-hqB" secondAttribute="leading" id="Awi-BF-qlb"/>
-                            <constraint firstItem="3ju-Sy-hqB" firstAttribute="leading" secondItem="ybA-u7-jUy" secondAttribute="leading" id="Bbx-kt-FBY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wEt-7n-BxP" secondAttribute="trailing" constant="50" id="Blj-m4-Zro"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZG0-yd-MBr" secondAttribute="trailing" constant="16" id="Ea0-eT-Wlh"/>
-                            <constraint firstItem="GSY-bI-pgv" firstAttribute="trailing" secondItem="F5w-h4-6Oz" secondAttribute="trailing" id="H6Z-I7-kAx"/>
-                            <constraint firstItem="kkL-qF-1l5" firstAttribute="leading" secondItem="wTO-FA-QPf" secondAttribute="trailing" constant="8" id="JBS-6D-Ice"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QYv-iA-4pZ" secondAttribute="bottom" constant="69" id="KXL-h3-BHL"/>
-                            <constraint firstItem="aPc-1y-oB3" firstAttribute="trailing" secondItem="9h1-eC-IaI" secondAttribute="trailing" id="KdV-qb-aVA"/>
-                            <constraint firstItem="wTO-FA-QPf" firstAttribute="trailing" secondItem="GSY-bI-pgv" secondAttribute="trailing" id="L4Z-W0-WRk"/>
-                            <constraint firstItem="3ju-Sy-hqB" firstAttribute="top" secondItem="L58-6Q-3Fb" secondAttribute="bottom" constant="20" id="Oeh-s5-mUj"/>
-                            <constraint firstItem="9pf-TH-C0e" firstAttribute="centerX" secondItem="L58-6Q-3Fb" secondAttribute="centerX" constant="2" id="PF6-DW-ANq"/>
-                            <constraint firstItem="xmR-F7-VqS" firstAttribute="top" secondItem="F5w-h4-6Oz" secondAttribute="bottom" constant="8" id="Ptx-Rv-kw2"/>
-                            <constraint firstItem="QYv-iA-4pZ" firstAttribute="top" secondItem="ybA-u7-jUy" secondAttribute="bottom" constant="26" id="RbJ-eC-2pi"/>
-                            <constraint firstItem="wTO-FA-QPf" firstAttribute="top" secondItem="kkL-qF-1l5" secondAttribute="top" id="Sog-3A-fCc"/>
-                            <constraint firstItem="F5w-h4-6Oz" firstAttribute="top" secondItem="9pf-TH-C0e" secondAttribute="bottom" constant="8" id="T94-es-eg9"/>
-                            <constraint firstItem="ZG0-yd-MBr" firstAttribute="top" secondItem="GSY-bI-pgv" secondAttribute="bottom" constant="30" id="To6-aT-S22"/>
-                            <constraint firstItem="wTO-FA-QPf" firstAttribute="leading" secondItem="GSY-bI-pgv" secondAttribute="leading" id="WLd-kb-Dag"/>
-                            <constraint firstItem="L58-6Q-3Fb" firstAttribute="top" secondItem="wEt-7n-BxP" secondAttribute="bottom" constant="30" id="Ye6-YI-ZWA"/>
-                            <constraint firstItem="L58-6Q-3Fb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZFE-ob-46w"/>
-                            <constraint firstItem="9pf-TH-C0e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="ZFx-C3-gYg"/>
-                            <constraint firstItem="ybA-u7-jUy" firstAttribute="top" secondItem="3ju-Sy-hqB" secondAttribute="bottom" constant="26" id="ct5-UC-ip4"/>
-                            <constraint firstItem="3ju-Sy-hqB" firstAttribute="trailing" secondItem="ybA-u7-jUy" secondAttribute="trailing" id="f7V-a8-i2K"/>
-                            <constraint firstItem="GSY-bI-pgv" firstAttribute="top" secondItem="wTO-FA-QPf" secondAttribute="bottom" constant="31" id="fDH-zB-Xic"/>
-                            <constraint firstItem="F5w-h4-6Oz" firstAttribute="baseline" secondItem="9h1-eC-IaI" secondAttribute="baseline" id="fs5-BJ-a4C"/>
-                            <constraint firstItem="F5w-h4-6Oz" firstAttribute="firstBaseline" secondItem="9h1-eC-IaI" secondAttribute="firstBaseline" id="geF-pr-L6f"/>
-                            <constraint firstItem="kkL-qF-1l5" firstAttribute="leading" secondItem="aPc-1y-oB3" secondAttribute="leading" id="j1o-uu-EQN"/>
-                            <constraint firstItem="9pf-TH-C0e" firstAttribute="top" secondItem="ZG0-yd-MBr" secondAttribute="bottom" constant="8" id="jV1-TZ-U7J"/>
-                            <constraint firstItem="wTO-FA-QPf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="jfu-MU-G5W"/>
-                            <constraint firstItem="ZG0-yd-MBr" firstAttribute="leading" secondItem="F5w-h4-6Oz" secondAttribute="leading" id="kPf-oZ-Dgy"/>
-                            <constraint firstItem="wTO-FA-QPf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="knb-C2-6i0"/>
-                            <constraint firstItem="9h1-eC-IaI" firstAttribute="trailing" secondItem="3ju-Sy-hqB" secondAttribute="trailing" id="ldQ-hy-bLp"/>
-                            <constraint firstItem="9pf-TH-C0e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="liz-E5-6oa"/>
-                            <constraint firstItem="wTO-FA-QPf" firstAttribute="centerY" secondItem="kkL-qF-1l5" secondAttribute="centerY" id="moL-XE-XQu"/>
-                            <constraint firstItem="aPc-1y-oB3" firstAttribute="leading" secondItem="9h1-eC-IaI" secondAttribute="leading" id="rsN-Kl-dVI"/>
-                            <constraint firstItem="GSY-bI-pgv" firstAttribute="bottom" secondItem="aPc-1y-oB3" secondAttribute="bottom" id="sNN-6k-FbB"/>
-                            <constraint firstItem="kkL-qF-1l5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="u9w-zA-ag0"/>
-                            <constraint firstItem="9h1-eC-IaI" firstAttribute="centerX" secondItem="wEt-7n-BxP" secondAttribute="centerX" id="yVh-HC-Ln8"/>
-                            <constraint firstItem="ybA-u7-jUy" firstAttribute="trailing" secondItem="QYv-iA-4pZ" secondAttribute="trailing" id="yx2-Pw-HGQ"/>
-                            <constraint firstItem="wEt-7n-BxP" firstAttribute="top" secondItem="9h1-eC-IaI" secondAttribute="bottom" constant="10" id="zF4-Em-xku"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
+                        <sections>
+                            <tableViewSection id="9wQ-w9-CBc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="FwH-nE-F69">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FwH-nE-F69" id="Qtw-ed-9cR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Средняя ЗП за год" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTO-FA-QPf">
+                                                    <rect key="frame" x="20" y="1" width="169" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkL-qF-1l5">
+                                                    <rect key="frame" x="197" y="1" width="162" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5060734160958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="Hm1-No-Ah5">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hm1-No-Ah5" id="4Gh-XO-cXA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-1y-oB3">
+                                                    <rect key="frame" x="197" y="1" width="162" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5060734160958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Текущая ЗП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSY-bI-pgv">
+                                                    <rect key="frame" x="20" y="1" width="169" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="rM4-iU-Xre">
+                                        <rect key="frame" x="0.0" y="156" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rM4-iU-Xre" id="wMt-kZ-5kh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22 рабочих дня в период отпуска (по производственому календарю)" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZG0-yd-MBr">
+                                                    <rect key="frame" x="16" y="1" width="343" height="61"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="gYD-1j-AKx">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gYD-1j-AKx" id="eRi-nx-cS8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="22" minValue="16" maxValue="46" translatesAutoresizingMaskIntoConstraints="NO" id="9pf-TH-C0e">
+                                                    <rect key="frame" x="18" y="1" width="343" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" selected="YES"/>
+                                                    </accessibility>
+                                                    <connections>
+                                                        <action selector="sliderValueCHanged:" destination="nz5-6Q-qQh" eventType="valueChanged" id="Qen-HQ-f69"/>
+                                                    </connections>
+                                                </slider>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="5kG-H3-EDd">
+                                        <rect key="frame" x="0.0" y="284" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5kG-H3-EDd" id="m7P-2D-eN5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 дней отработано" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5w-h4-6Oz">
+                                                    <rect key="frame" x="20" y="1" width="150" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minimumValue="15" maximumValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="xmR-F7-VqS">
+                                                    <rect key="frame" x="265" y="1" width="94" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5060734160958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="workedDaysChangingStepper:" destination="nz5-6Q-qQh" eventType="valueChanged" id="toh-f3-P95"/>
+                                                    </connections>
+                                                </stepper>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="g0g-yU-Bva">
+                                        <rect key="frame" x="0.0" y="348" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g0g-yU-Bva" id="NZI-w0-rh0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minimumValue="1" maximumValue="28" translatesAutoresizingMaskIntoConstraints="NO" id="wEt-7n-BxP">
+                                                    <rect key="frame" x="265" y="1" width="94" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5060734160958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" insetsLayoutMarginsFromSafeArea="NO"/>
+                                                    <connections>
+                                                        <action selector="vacationDaysChangingStepper:" destination="nz5-6Q-qQh" eventType="valueChanged" id="Frq-kB-mtS"/>
+                                                    </connections>
+                                                </stepper>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 день отпуска" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-eC-IaI">
+                                                    <rect key="frame" x="20" y="1" width="111" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="Am2-pD-oRZ">
+                                        <rect key="frame" x="0.0" y="412" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Am2-pD-oRZ" id="5Iw-u6-OMl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L58-6Q-3Fb">
+                                                    <rect key="frame" x="20" y="1" width="339" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <color key="tintColor" red="0.06598754137" green="0.02973069456" blue="0.38354112689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Рассчитать"/>
+                                                    <connections>
+                                                        <action selector="calcButton:" destination="nz5-6Q-qQh" eventType="touchUpInside" id="4hu-XD-xZ8"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="FUF-6K-ohb">
+                                        <rect key="frame" x="0.0" y="476" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FUF-6K-ohb" id="GBH-RX-bOf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ваши отпускные:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ju-Sy-hqB">
+                                                    <rect key="frame" x="20" y="1" width="339" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="bpQ-S8-Z7X">
+                                        <rect key="frame" x="0.0" y="540" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bpQ-S8-Z7X" id="it8-fg-FMl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ваша ЗП в период отпуска:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybA-u7-jUy">
+                                                    <rect key="frame" x="20" y="1" width="339" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="krF-R1-m7R">
+                                        <rect key="frame" x="0.0" y="604" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="krF-R1-m7R" id="Wsb-I4-wYl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Итого вы получите:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYv-iA-4pZ">
+                                                    <rect key="frame" x="20" y="1" width="339" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="nz5-6Q-qQh" id="noU-w6-eZw"/>
+                            <outlet property="delegate" destination="nz5-6Q-qQh" id="9Fs-VV-VKs"/>
+                        </connections>
+                    </tableView>
                     <connections>
-                        <outlet property="middleGrossTextField" destination="kkL-qF-1l5" id="NMQ-Yu-ugH"/>
-                        <outlet property="nowSalary" destination="aPc-1y-oB3" id="EK4-bx-hAY"/>
-                        <outlet property="totalCostLabel" destination="QYv-iA-4pZ" id="u7B-Em-nYb"/>
-                        <outlet property="vacationCostLabel" destination="3ju-Sy-hqB" id="f7D-Hz-ZNr"/>
-                        <outlet property="vacationDaysLabel" destination="9h1-eC-IaI" id="Q02-3w-fIR"/>
-                        <outlet property="vacationDaysStepper" destination="wEt-7n-BxP" id="QJO-D9-I0F"/>
-                        <outlet property="workCalendarDaysLabel" destination="ZG0-yd-MBr" id="fnQ-bi-cLM"/>
-                        <outlet property="workCostLabel" destination="ybA-u7-jUy" id="3lO-iS-OqZ"/>
-                        <outlet property="workDaysStepperOutlet" destination="xmR-F7-VqS" id="OPF-A2-nRa"/>
-                        <outlet property="workedDaysLabel" destination="F5w-h4-6Oz" id="gNz-Px-g67"/>
+                        <outlet property="middleGrossTextField" destination="kkL-qF-1l5" id="F8h-FV-DQF"/>
+                        <outlet property="nowSalary" destination="aPc-1y-oB3" id="ewy-Oq-aqL"/>
+                        <outlet property="totalCostLabel" destination="QYv-iA-4pZ" id="0FR-KY-OB7"/>
+                        <outlet property="vacationCostLabel" destination="3ju-Sy-hqB" id="pmr-1I-b8C"/>
+                        <outlet property="vacationDaysLabel" destination="9h1-eC-IaI" id="QW5-Fz-8TS"/>
+                        <outlet property="workCalendarDaysLabel" destination="ZG0-yd-MBr" id="Nnr-36-KFV"/>
+                        <outlet property="workCostLabel" destination="ybA-u7-jUy" id="UfP-11-SXF"/>
+                        <outlet property="workedDaysLabel" destination="F5w-h4-6Oz" id="z4s-AD-pTb"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PtQ-Lz-eTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="100.29985007496252"/>
+            <point key="canvasLocation" x="892" y="129.98500749625188"/>
         </scene>
     </scenes>
 </document>
